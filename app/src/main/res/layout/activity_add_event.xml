@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ghzmdr.eventtracker.AddEventActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Nome"/>
+
+        <EditText
+            android:id="@+id/add_event_name"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="Nome Evento"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Descrizione"/>
+
+        <EditText
+            android:id="@+id/add_event_desc"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint=""/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Indirizzo"/>
+
+
+        <EditText
+            android:id="@+id/add_event_address"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="Via e numero"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Città"/>
+
+
+        <EditText
+            android:id="@+id/add_event_city"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="o Paese"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Data"/>
+
+        <Button
+            android:id="@+id/btn_pick_date"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scegli data"/>
+
+    </RelativeLayout>
+
+    <!--RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Immagine"/>
+
+        <Button
+            android:id="@+id/btn_pick_img"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scegli immagine"/>
+
+    </RelativeLayout-->
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:text="Annulla"
+            android:id="@+id/add_event_activity_cancel"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="OK"
+            android:id="@+id/add_event_activity_confirm"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_event_activity_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"/>
+</RelativeLayout>

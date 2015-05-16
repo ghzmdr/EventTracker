@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start|bottom"
+    android:background="#F3F3F4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp">
+
+            <ImageView
+                android:id="@+id/userphoto_cover"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/material_blue_grey_900"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="30dp"
+                android:background="@color/accent_material_dark"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text="Name Surname"/>
+
+            <ImageView
+                android:id="@+id/userphoto_image"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_shape"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/drawer_favs"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:background="@color/accent_material_light"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/bottom_drawer_height">
+
+        <ImageButton
+            android:id="@+id/btn_exit"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_action_exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/button_material_light"/>
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_action_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

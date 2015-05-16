@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#dedede">
+
+    <LinearLayout
+        android:id="@+id/home_shortcut"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/home_link"
+        android:src="@drawable/ic_action_home"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="Home"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:id="@+id/btn_edit_home"
+        android:src="@drawable/ic_action_edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+</RelativeLayout>
